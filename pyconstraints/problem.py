@@ -1,4 +1,4 @@
-from csp.solvers import DefaultSolver
+from pyconstraints.solvers import DefaultSolver
 
 
 class Problem(object):
@@ -54,13 +54,22 @@ class Problem(object):
         return tuple(self.iter_solutions())
 
     def restore_point(self, start):
+        """Restores the iterator to a given point.
+        
+        Restoring may not be fast in all cases.
+        """
         self._restore_point = start
         return self
 
     def save_point(self):
+        """Returns a reference point the solver can use to re-traverse to.
+        
+        Restoring to a savepoint may not be fast in all cases.
+        """
         return self._solver_instance.save_point()
 
     def known_solutions(self):
+        """Returns previously discovered solutions. This can be used while using iter_solutions."""
         return self._solver_instance.solutions_at_points
 
     def __repr__(self):

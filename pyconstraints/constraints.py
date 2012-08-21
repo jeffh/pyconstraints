@@ -1,8 +1,8 @@
-from csp.nil import NilObject
+from pyconstraints.nil import NilObject
 
 
 class BaseConstraint(object):
-    """Abstract class. The basic features provided to all constraints.
+    """Abstract class. The basic features provided to all pyconstraints.
     """
     def __init__(self, variables, values):
         self._vars, self._values = variables, values

@@ -1,9 +1,9 @@
 from itertools import product
 from abc import ABCMeta, abstractproperty, abstractmethod
 
-from csp.constraints import Constraint, NilObject
+from pyconstraints.constraints import Constraint, NilObject
 
-__all__ = ['BruteForceSolver', 'DefaultSolver', 'BacktrackingSolver']
+__all__ = ['SolverInterface', 'BaseSolver', 'BruteForceSolver', 'DefaultSolver', 'BacktrackingSolver']
 
 
 class SolverInterface(object):
