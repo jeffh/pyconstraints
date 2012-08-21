@@ -1,4 +1,4 @@
-CSP
+PyConstraints
 ===
 
 A simple, constraints satisfaction problem solver. Used for the [YACS][] course
