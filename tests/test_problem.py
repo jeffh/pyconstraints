@@ -1,6 +1,5 @@
 from pyconstraints import Problem, BruteForceSolver, BacktrackingSolver
 import unittest
-from mock import Mock
 
 # utility helpers
 
