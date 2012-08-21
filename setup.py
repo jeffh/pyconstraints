@@ -16,6 +16,6 @@ setup(
     author='Jeff Hui',
     author_email='jeff@jeffhui.net',
     url='http://github.com/jeffh/pyconstraints',
-    packages=['csp'],
+    packages=['pyconstraints'],
     requires=[],
 )
